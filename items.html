@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('https://crl2020.imgix.net/img/retail-blog-header-13.png?auto=format,compress&q=60&w=1185'); 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover; 
+        }
+    </style>
+    <Title>Inventory Management tool</Title>
+    <h2>Inventory Management: </h2><br>
+</head>
+<body>
+    <form id="itemlist">
+
+        <label for="itemname">Item Name:</label>
+        <input type="text" id="itemname"> &nbsp;
+
+        <label for="description">Description:</label>
+        <input type="text" id="description"> &nbsp;
+        
+        <label for="price">Price:</label>
+        <input type="number" id="price"> &nbsp;
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity">
+
+        <button type="submit" id="submit">Add Item</button>
+    </form>
+    <ul id="itemlists"></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.js"></script>
+    <script src="items.js"></script>
+</body>
+</html>
